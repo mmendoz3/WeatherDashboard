@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container-main bg-white">
+        <nav class="navbar justify-content-center navbar-expand-lg navbar-light bg-dark">
+            <h1 class="row-md text-light">Weather Dashboard</h1>    
+        </nav>  
+        
+        <div class="row">
+            <div class="one col-3 bg-light">
+                <h4>Search for a city</h4>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" id="input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" id="search" type="submit">Search</button>
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">City 1</li>
+                            <li class="list-group-item">City 2</li>
+                            <li class="list-group-item">City 3</li>
+                            <li class="list-group-item">City 4</li>
+                            <li class="list-group-item">City 5</li>
+                            <li class="list-group-item">City 6</li>
+                            <li class="list-group-item">City 7</li>
+                            <li class="list-group-item">City 8</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+            <div class="two col-8">
+                <div class="row border border-secondary" id="one">
+                    <h2 id="city">City:</h2><br>
+                    <h4 id="temp">Temperature:</h4><br>
+                    <h4 id="humidity">Humidity:</h4><br>
+                    <h4 id="wind">Wind speed:</h4><br>
+                </div>
+                <div class="row">
+                    <h2>5 Day forecast</h2><br>
+                    <div class="col-2 border border-secondary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae iure, nesciunt assumenda praesentium tempore et. Quam facere minus, neque libero quaerat error qui quidem veritatis corporis.</p>
+                    </div>
+                    <div class="col-2 border border-secondary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae iure, nesciunt assumenda praesentium tempore et. Quam facere minus, neque libero quaerat error qui quidem veritatis corporis.</p>
+                    </div>
+                    <div class="col-2 border border-secondary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae iure, nesciunt assumenda praesentium tempore et. Quam facere minus, neque libero quaerat error qui quidem veritatis corporis.</p>
+                    </div>    
+                    <div class="col-2 border border-secondary">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae iure, nesciunt assumenda praesentium tempore et. Quam facere minus, neque libero quaerat error qui quidem veritatis corporis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js.js"></script>
+    
+</body>
+</html>
