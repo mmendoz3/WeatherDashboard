@@ -3,9 +3,10 @@
 var cityButtons = localStorage.getItem('cityList');
 console.log(cityButtons);
 //use a for loop and jquery to create buttons with the sting chicago 
-for (var i = 0; i < cityButtons.length; i++) {
-    console.log(cityButtons[i]);
-}
+//for (var i = 0; i < cityButtons.length; i++) {
+    //console.log(cityButtons[i]);
+//}
+
 
 function weather(cityResult) {
 var APIKey = "9d23b5dbc431bec7d6045c725d4bdb49";
@@ -14,10 +15,13 @@ var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityResult}&a
 $.ajax({
     url: queryURL,
     method: "GET"
-    }).then(function(response) {
+    })
+    .then(function(response) {
     console.log(response);
+    $(".city").html("<h1>" + response.name + "</h1>");
+    $(".wind").text("Wind Speed: " + response.wind.speed + " MPH");
+    $(".humidity").text("Humidity: " + response.main.humidity + " %");
     //rendering information 
-    $('#city').html('city name:' + response.name);
 }); 
 }
 
